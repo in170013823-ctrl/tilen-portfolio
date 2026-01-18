@@ -1,0 +1,26 @@
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+
+    .bg-hero {
+      background: url('web5.jpg') center/cover no-repeat;
+    }
+    .bg-projects {
+      background: url('web2.jpg') center/cover no-repeat;
+    }
+    .bg-contact {
+      background: url('web4.jpg') center/cover no-repeat;
+    }
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeIn {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+    .animate-delay-1 {
+      animation-delay: 0.7s;
+    }
+    

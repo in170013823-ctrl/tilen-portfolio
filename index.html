@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tilen TechWorks | Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Tilen TechWorks connects skilled students with real online tech work. Build, hire, and grow together." />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+<!--NAVBAR-->
+<header class="fixed w-full z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-b">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#hero" class="text-xl font-bold text-blue-600">Tilen Odiwuor Wanjara</a>
+
+    <div class="hidden md:flex gap-8 font-medium">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 bg-white dark:bg-gray-900">
+    <a href="#about" class="block py-2">About</a>
+    <a href="#services" class="block py-2">Services</a>
+    <a href="#projects" class="block py-2">Projects</a>
+    <a href="#skills" class="block py-2">Skills</a>
+    <a href="#testimonials" class="block py-2">Testimonials</a>
+    <a href="#contact" class="block py-2">Contact</a>
+  </div>
+</header>
+
+<!--HERO-->
+<section id="hero" class="min-h-screen bg-hero flex items-center pt-24">
+  <div class="max-w-4xl mx-auto text-center bg-black/60 text-white p-10 rounded-2xl animate-fadeIn">
+    <h1 class="text-5xl font-bold mb-6">
+      Crafting Modern Web & AI Solutions
+    </h1>
+    <h2>
+      I'm Tilen Odiwuor Wanjara, a BSc IT student specializing in web development and AI tools.
+    </h2>
+    <h3>
+      Your go-to for websites, apps, and automation
+    </h3>
+    <p class="text-xl mb-8">
+      Transforming ideas into functional websites, apps, and AI-powered tools
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#projects" class="bg-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">See My Projects</a>
+      <a href="#contact" class="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-black transition">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<!--ABOUT-->
+<section id="about" class="py-24">
+  <div class="max-w-4xl mx-auto px-6 text-center animate-fadeIn">
+    <h2 class="text-4xl font-bold mb-6">About Me</h2>
+    <p class="text-lg leading-relaxed">
+      Hi, I’m <strong> Tilen Odiwuor Wanjara</strong>, currently pursuing a Bachelor of Science in Information Technology at Kisii University. I am passionate about designing and developing modern web applications, AI-driven solutions, and automation tools that solve real-world problems.
+
+Over the course of my studies and personal projects, I have gained hands-on experience in Java, Python, HTML, CSS, Tailwind CSS, SQL, and other cutting-edge technologies. I enjoy turning ideas into functional, user-friendly applications while ensuring clean, maintainable, and efficient code.
+
+This portfolio showcases my journey as a developer, highlighting projects that demonstrate my skills in web development, backend programming, database management, and AI/automation solutions. I am driven by curiosity and continuous learning, and I am always looking for opportunities to collaborate with clients, businesses, and fellow developers to bring innovative digital solutions to life.
+
+Whether it’s building responsive websites, developing secure APIs, or implementing intelligent automation tools, my goal is to deliver high-quality, reliable, and impactful technology solutions that make a difference.
+
+I invite you to explore my work, see the projects I’ve built, and connect with me if you’d like to collaborate or discuss exciting tech opportunities.
+    </p>
+  </div>
+</section>
+
+<!--SERVICES-->
+<section id="services" class="py-24 bg-gray-100 dark:bg-gray-800">
+  <div class="max-w-7xl mx-auto px-6 animate-fadeIn">
+    <h2 class="text-4xl font-bold text-center mb-12">What I Offer</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:scale-105 transition transform">
+        <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+        <p>Modern websites, dashboards, landing pages, and web applications using HTML, CSS, JS, and Tailwind.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:scale-105 transition transform">
+        <h3 class="text-xl font-semibold mb-4">Backend & APIs</h3>
+        <p>Secure APIs, databases, authentication systems, and integrations using Python, FastAPI, SQL, and more.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow hover:scale-105 transition transform">
+        <h3 class="text-xl font-semibold mb-4">AI & Automation</h3>
+        <p>Chatbots, data analysis, automation scripts, and AI-powered tools to streamline workflows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--PROJECTS-->
+<section id="projects" class="py-24 bg-projects text-white">
+  <div class="bg-black/60 py-24 animate-fadeIn">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">My Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white text-black p-6 rounded-xl shadow hover:scale-105 transition transform">
+          <img src="web7.png" alt="Project Screenshot" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+          <p class="mb-4">Built with HTML, Tailwind CSS, and JavaScript. Responsive design and dark mode included.</p>
+          <a href="https://github.com/yourusername/project1" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+        </div>
+        <div class="bg-white text-black p-6 rounded-xl shadow hover:scale-105 transition transform">
+          <img src="web5.jpg" alt="Project Screenshot" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">AI Chatbot</h3>
+          <p class="mb-4">A chatbot built using Python and OpenAI API to automate customer queries and support tasks.</p>
+          <a href="https://github.com/yourusername/project2" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+        </div>
+        <div class="bg-white text-black p-6 rounded-xl shadow hover:scale-105 transition transform">
+          <img src="web1.jpg" alt="Project Screenshot" class="rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">FastAPI Backend</h3>
+          <p class="mb-4">Developed a REST API with FastAPI, SQLAlchemy, and PostgreSQL for scalable web applications.</p>
+          <a href="https://github.com/yourusername/project3" target="_blank" class="text-blue-600 font-semibold hover:underline">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--SKILLS-->
+<section id="skills" class="py-24">
+  <div class="max-w-4xl mx-auto px-6 text-center animate-fadeIn">
+    <h2 class="text-4xl font-bold mb-6">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">HTML</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">CSS</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">JavaScript</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">Tailwind CSS</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">Python</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">FastAPI</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">SQL</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">AI & Automation</span>
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-full">Java</span>
+    </div>
+  </div>
+</section>
+
+<!--TESTIMONIALS-->
+<section id="testimonials" class="py-24 bg-gray-100 dark:bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6 text-center animate-fadeIn">
+    <h2 class="text-4xl font-bold mb-12">Testimonials</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow">
+        <p>"Tilen delivered my website on time and with excellent quality. Highly recommend!"</p>
+        <p class="mt-4 font-semibold">— Kevin Ochieng Ogola</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow">
+        <p>"A talented student with real problem-solving skills. Great to work with."</p>
+        <p class="mt-4 font-semibold">— Prof. James Ogalo (kisii university)</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow">
+        <p>"Tilen's AI chatbot improved our customer support efficiency significantly."</p>
+        <p class="mt-4 font-semibold">— FElix Omondi (God Kado Secondary School)</p>
+      </div>
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-xl shadow">
+        <p>"Professional and skilled. Delivered a robust backend for our app."</p>
+        <p class="mt-4 font-semibold">— Joice  Wanjara (Local Business Owner)</p>
+    </div>
+  </div>
+</section>
+
+<!--CONTACT -->
+<section id="contact" class="py-24 bg-contact text-white">
+  <div class="bg-black/70 py-24 animate-fadeIn">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-8">Contact Me</h2>
+
+      <div class="text-center mb-10 space-y-2">
+        <p><a href="mailto:tilewanjara@gmail.com">tilewanjara@gmail.com</a></p>
+        <p> <a href="mailto:in1700013823@kisiiuniversity.ac.ke">in1700013823@kisiiuniversity.ac.ke</a></p>
+        <p><a href="tel:+254794623214">0794623214</a> / <a href="tel:+254705689402">0705689402</a></p>
+      </div>
+
+      <form id="contactForm" class="space-y-4">
+        <input name="name" required placeholder="Your Name" class="w-full p-3 rounded text-black" />
+        <input name="email" type="email" required placeholder="Your Email" class="w-full p-3 rounded text-black" />
+        <textarea name="message" required placeholder="Your Message" class="w-full p-3 rounded text-black"></textarea>
+        <button class="w-full bg-blue-600 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer class="py-6 text-center bg-gray-100 dark:bg-gray-800">
+  © 2026 Tilen Wanjara. All rights reserved.
+  in God we trust!
+</footer>
+
+<!--JS  files-->
+<script src="script.js"></script>
+</body>
+</html>
